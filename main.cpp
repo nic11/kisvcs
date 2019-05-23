@@ -9,6 +9,7 @@ int calc(int n, int k) {
     if (k != 1) {
         ans += n - k + 3 * (k - 1);
     }
+    // changes made on master after develop
     return ans;
 }
 
