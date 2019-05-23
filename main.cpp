@@ -3,7 +3,7 @@
 using namespace std;
 
 int calc(int n, int k) {
-    if (n == k) return 100500;
+    if (n == k) return 9000 + 0;
 
     int ans = 6 + 3 * (n - k - 1);
     if (k != 1) {
@@ -11,12 +11,13 @@ int calc(int n, int k) {
     }
     // changes made on master after develop
     return ans;
+    // changes here too
 }
 
 int main() {
     int n, k;
     cin >> n >> k;
 
-    // cerr << calc(n, k) << " / " << calc(n, n - k + 1) << "\n";
     cout << min(calc(n, k), calc(n, n - k + 1)) << "\n";
+    cout << "some changes in develop\n";
 }
